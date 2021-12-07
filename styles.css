@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/poppins.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'PoppinsMedium';
+    src: url('fonts/Poppins-Medium.ttf') format('truetype');
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Poppins;
+}
+div {
+    padding: 40px 0;
+}
+.nav, #part-1, #part-3, footer {
+    background-color: #0475ba;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: rgb(173, 237, 241);
+}
+.img-wrapper {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+img {
+    position: relative;
+    bottom: 40px;
+    width: 100%;
+}
+.nav {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav h3 {
+    margin: 0 10px;
+}
+.nav ul {
+    display: none;
+}
+@media screen and (min-width: 400px) {
+    .nav ul {
+        display: block;
+        list-style-type: none;
+        font-family: PoppinsMedium;
+        margin-left: 30px;
+    }
+}
+
+.nav ul li {
+    display: inline;
+    margin-left: 10px;
+}
+.personnel div {
+    margin: 0 auto;
+    text-align: center;
+}
+@media screen and (min-width: 450px) {
+    .personnel {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.personnel p {
+    color: #0475ba;
+    margin-top: 15px;
+}
+.sous-titre span {
+    float: right;
+    font-weight: normal;
+}
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+.titre {
+    font-weight: bold;
+    margin-bottom: 23px;
+}
+p.sous-titre {
+    font-weight: bold;
+}
+#part-1 ul {
+    margin-left: 40px;
+    font-size: 0.8em;
+}
+#part-2 .titre, #part-4 .titre {
+    color: #0475ba;
+}
+.desc {
+    padding: 0;
+}
+.desc p {
+    margin-bottom: 15px;
+    font-size: 0.8em;
+}
+#part-3 .desc p {
+    font-weight: normal;
+}
+footer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 140px;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-decoration: underline;
+}
+footer div {
+    width: 30%;
+    margin-left: 10px;
+}
+footer a i {
+    margin-right: 5px;
+}
