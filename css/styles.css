@@ -18,7 +18,8 @@ div {
     padding: 40px 0;
 }
 .nav, #part-1, #part-3, footer {
-    background-color: #0475ba;
+    background: rgb(46,2,66);
+    background: linear-gradient(90deg, rgba(46,2,66,1) 0%, rgba(146,2,154,1) 61%);
     color: white;
 }
 a {
@@ -65,24 +66,27 @@ img {
     display: inline;
     margin-left: 10px;
 }
-.personnel div {
+.personal div {
     margin: 0 auto;
     text-align: center;
 }
 @media screen and (min-width: 450px) {
-    .personnel {
+    .personal {
         display: flex;
         justify-content: space-evenly;
         width: 80%;
         margin: 0 auto;
     }
 }
+.presentation {
+    line-height: 2.3rem;
+}
 
-.personnel p {
-    color: #0475ba;
+.personal p {
+    color: #570266;
     margin-top: 15px;
 }
-.sous-titre span {
+.subtitle span {
     float: right;
     font-weight: normal;
 }
@@ -91,19 +95,20 @@ img {
     margin: 0 auto;
     padding: 0;
 }
-.titre {
-    font-weight: bold;
+.title {
+    font-family: PoppinsMedium;
+    font-weight: 800;
     margin-bottom: 23px;
 }
-p.sous-titre {
+p.subtitle {
     font-weight: bold;
 }
 #part-1 ul {
     margin-left: 40px;
     font-size: 0.8em;
 }
-#part-2 .titre, #part-4 .titre {
-    color: #0475ba;
+#part-2 .title, #part-4 .title {
+    color: #570266;
 }
 .desc {
     padding: 0;
